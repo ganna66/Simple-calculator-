@@ -57,7 +57,12 @@ opeator.forEach(function (sign) {
 eQual.addEventListener("click", function () {
   try {
     answer = eval(currentExepression);
-    inputBox.value = answer.toFixed(4);
+    //edit: for decimal number problem.
+    if (Number.isInteger(answer)) {
+      inputBox.value = answer;
+    } else {
+      inputBox.value = parseFloat(answer.toFixed(3));
+    }
     afterEqual = true;
   } catch {
     inputBox.value = "Erorr!";
@@ -71,3 +76,4 @@ c.addEventListener("click", function () {
   currentExepression = " ";
   afterEqual = false;
 });
+
