@@ -12,7 +12,8 @@ let inputBox = document.querySelector(".in");
 const btn = document.querySelectorAll(".btn-num");
 const opeator = document.querySelectorAll(".operator");
 const eQual = document.querySelector(".equal");
-const c = document.querySelector(".AC");
+const c = document.querySelector(".C");
+const ac = document.querySelector(".AC");
 
 let currentExepression = " ";
 let answer;
@@ -72,8 +73,21 @@ eQual.addEventListener("click", function () {
 });
 
 c.addEventListener("click", function () {
+  if (inputBox.value) {
+    inputBox.value = inputBox.value.slice(0, currentExepression.length - 1);
+    currentExepression = currentExepression.slice(
+      0,
+      currentExepression.length - 1
+    );
+  }
+  afterEqual = false;
+});
+
+ac.addEventListener("click", function () {
   inputBox.value = " ";
   currentExepression = " ";
   afterEqual = false;
 });
+
+
 
