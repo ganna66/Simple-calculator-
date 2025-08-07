@@ -1,0 +1,66 @@
+<!--
+  This is a beginner-level calculator project.
+  Some parts of the code may be hardcoded or not optimized,
+  as I'm still learning JavaScript and trying to build things on my own.
+
+  I'm experimenting with DOM manipulation, event listeners, and basic logic.
+
+  Feedback is always welcome :)
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple calculator</title>
+    <link href="calc.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="calculator">
+        <div class="input">
+          <input class="in" />
+        </div>
+
+        <div class="op">
+          <button class="operator add">+</button>
+          <button class="operator minus">-</button>
+          <button class="operator multiply">×</button>
+          <button class="operator divide">÷</button>
+        </div>
+
+        <div class="down">
+          <div class="numbers">
+            <div id="line-1">
+              <button class="btn-num">1</button>
+              <button class="btn-num">2</button>
+              <button class="btn-num">3</button>
+            </div>
+
+            <div id="line-2">
+              <button class="btn-num">4</button>
+              <button class="btn-num">5</button>
+              <button class="btn-num">6</button>
+            </div>
+
+            <div id="line-3">
+              <button class="btn-num">7</button>
+              <button class="btn-num">8</button>
+              <button class="btn-num">9</button>
+            </div>
+            <div id="line-4">
+              <button class="btn-num">0</button>
+              <button class="btn-num">.</button>
+              <button class="AC">c</button>
+            </div>
+          </div>
+          <div class="divEqual">
+            <button class="equal">=</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="calc.js"></script>
+  </body>
+</html>
