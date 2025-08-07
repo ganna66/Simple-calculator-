@@ -2,6 +2,7 @@
   This is a beginner-level calculator project.
   Some parts of the code may be hardcoded or not optimized,
   as I'm still learning JavaScript and trying to build things on my own.
+  Not responsive to mobile
 
   I'm experimenting with DOM manipulation, event listeners, and basic logic.
 
@@ -88,6 +89,7 @@ ac.addEventListener("click", function () {
   currentExepression = " ";
   afterEqual = false;
 });
+
 
 
 
