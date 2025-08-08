@@ -58,7 +58,9 @@ opeator.forEach(function (sign) {
 
 eQual.addEventListener("click", function () {
   try {
-    answer = eval(currentExepression);
+    //answer = eval(currentExepression);    //replace this code :
+    let cleanedEquation = currentExepression.replace(/--/g, "+");
+    answer = eval(cleanedEquation);
     //edit: for decimal number problem.
     if (Number.isInteger(answer)) {
       inputBox.value = answer;
@@ -89,6 +91,7 @@ ac.addEventListener("click", function () {
   currentExepression = " ";
   afterEqual = false;
 });
+
 
 
 
